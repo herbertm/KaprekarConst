@@ -1,4 +1,4 @@
-// KaprekarConst.h, (c) Herbert Meiler, April/May 2015, First Release
+// KaprekarConst.h, (c) Herbert Meiler, April/May 2015
 
 #ifndef __KAPREKARCONST_H__
 #define __KAPREKARCONST_H__
