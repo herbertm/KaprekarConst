@@ -1,4 +1,4 @@
-// KaprekarConstTest.cpp, (c) Herbert Meiler, April/May 2015, First Release
+// KaprekarConstTest.cpp, (c) Herbert Meiler, April/May 2015
 
 #include <time.h>
 
