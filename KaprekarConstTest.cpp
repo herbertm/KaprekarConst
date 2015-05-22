@@ -21,22 +21,22 @@ struct Collector
     }
 
     template<typename DigitContainer>
-	inline void operator()(const DigitContainer& kc) /* const */
-	{
+    inline void operator()(const DigitContainer& kc) /* const */
+    {
         ++count;
 
         //
 
-		for (auto it = kc.rbegin(); it != kc.rend(); ++it)
-		{
+        for (auto it = kc.rbegin(); it != kc.rend(); ++it)
+        {
             char digit = (char)*it;
             digit += (digit < 10) ? '0' : ('A' - 10);
 
             os << digit;
-		}
+        }
 
-		os << std::endl;
-	}
+        os << std::endl;
+    }
 
 private:
 
