@@ -85,7 +85,7 @@ Performance:
 ------------
 
 Testenvironment:
-Apple iMac, Intel Core i3 3,06 GHz
+Apple iMac, Intel Core i3 3,06 GHz (using only one Core)
 Windows 7
 
 1. 50-digits -> 136 Results in 7 Minutes
