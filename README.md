@@ -62,12 +62,12 @@ the fingerprint of the difference can never reach the fingerprint of the extreme
 
 The calculation of differences is optimized since both values are order, e.g.
 
-  9999
-- 1111
-------
-  8888
- 
+  9999 - 1111 = 8888
+
  -> 4 times 9  minus 4 times 1 -> 4 times 8
+ 
+ The behaviour of the borrow-flag is also well defined.
+ 
  
  The histogram approach is optimized for histograms which can be imaging "shifted",
  since the generate the same difference.
