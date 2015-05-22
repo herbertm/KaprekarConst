@@ -1,19 +1,28 @@
 KaprekarConst
+-------------
 
-KaprekarConst.h: A template-class for generating Kaprekar-Const's via brute force.
+KaprekarConst.h: A template-class for generating Kaprekar-Const's via brute force (for BASE [2;16])
 KaprekarConstTest.cpp: A command-line (test-) tool using KaprekarConst-template.
+
+TODO: add parallel version
 
 Compiler used: VC2015 RC, Simply create a C++ Console Project and add both files.
 
+TODO: add VC2015 prj file.
+
 Background:
+-----------
 
 See 
 http://en.wikipedia.org/wiki/6174_%28number%29
 for an introduction on the topic.
 
+See also this beautiful work (of my uncle, in German):
+http://www.rzbt.haw-hamburg.de/dankert/spezmath/html/Kaprekar-Konstanten.pdf
 
-Algorithm:
 
+(brute-force) Algorithm:
+------------------------
 
 Normally programs use the following approach:
 
@@ -21,7 +30,6 @@ Loop over all numbers with a given length (these numbers are potential KaprekarC
 Reorder the digits of these numbers building the largest possible number, building the smallest possible number.
 Calculate the difference between these two extreme-values and compare it with the Candidate.
 On equality a KaprekarConst was found.
-
 
 This approach has several disadvantages:
 - The same differences are calculated more than once.
@@ -54,10 +62,10 @@ the fingerprint of the difference can never reach the fingerprint of the extreme
 
 The calculation of differences is optimized since both values are order, e.g.
 
- 9999
--1111
------
- 8888
+  9999
+- 1111
+------
+  8888
  
  -> 4 times 9  minus 4 times 1 -> 4 times 8
  
@@ -66,15 +74,9 @@ The calculation of differences is optimized since both values are order, e.g.
  
  e.g.
  
- 4444-1111
- gives the same 
- as 
- 5555-2222
- gives the same
- as 
- 6666-3333
- 
- 
+521-125 = 632-236 = 743-347 etc.
+
+
  
  TODO: add more documentation....
  
