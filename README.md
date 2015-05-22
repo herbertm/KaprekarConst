@@ -70,7 +70,7 @@ The calculation of differences is optimized since both values are order, e.g.
  
  
  The histogram approach is optimized for histograms which can be imaging "shifted",
- since the generate the same difference.
+ since they generate the same difference.
  
  e.g.
  
